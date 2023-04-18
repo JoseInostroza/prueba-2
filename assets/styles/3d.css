@@ -1,0 +1,6 @@
+.targeta{
+    transition: box-shadow .1s;
+}
+.targeta:hover{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
