@@ -6,13 +6,16 @@
 }
 
 body {
+  max-width: 80%;
+  position: relative;
   background: #dee1e2;
   overflow-x: hidden;
   min-height: 100vh;
+  margin: 150px auto;
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -44,6 +47,7 @@ nav .nav__cuerpo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 15px;
 }
 
 nav .nav__cuerpo ul {
@@ -133,7 +137,54 @@ nav .nav__cuerpo .nav__cuerpo-searchBar input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-nav .nav__cuerpo .active {
+nav .nav__cuerpo .nav__cuerpo-searchBar.active {
   right: 0;
+}
+
+nav .nav__cuerpo .search_btnSearch {
+  position: relative;
+  left: 30px;
+  top: 2.5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+nav .nav__cuerpo .search_btnSearch.active {
+  left: 0;
+}
+
+nav .nav__cuerpo .search_btnClose {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  scale: 0;
+}
+
+nav .nav__cuerpo .search_btnClose.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .5;
+  transition: .5;
+  scale: 1;
+}
+
+nav .nav__cuerpo .nav__toggle {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  nav .nav__cuerpo .nav__cuerpo-navegacion {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    left: 100%;
+  }
+  nav .nav__cuerpo .nav__toggle {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=nav.css.map */
