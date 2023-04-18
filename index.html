@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/nav.css">
     <link rel="stylesheet" href="/assets/styles/cards.css">
-    <link rel="stylesheet" href="/assets/styles/3d.css">
+    <link rel="stylesheet" href="/assets/styles/shadow.css">
 </head>
 <body>
     <nav>
-        <a href="" class="nav__logo"></a>
+        <a href="#" class="nav__logo"><img src="/assets/img/pngegg(1).png" alt="" class="nav__logo-img"></a>
         <div class="nav__cuerpo">
             <ul class="nav__cuerpo-navegacion"> 
                 <li><a href="#fresh" class="nav-link">Fresh</a></li>
@@ -27,11 +27,13 @@
             </ul>
             <div class="nav__cuerpo-search">
                 <span class="icon">
-                    <box-icon name='search-alt-2'></box-icon>
-                    <box-icon name='x'></box-icon>
+                    <box-icon name='search-alt-2' id="btnSearch"></box-icon>
+                    <box-icon name='x' id="btnClose"></box-icon>
                 </span>
             </div>
-
+            <div class="nav__cuerpo-searchBar">
+                <input type="text" placeholder="Busca el nombre de tu digimon" id="searchBar">
+            </div>
         </div>
     </nav>
     <main>
@@ -58,4 +60,5 @@
  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <script src="/assets/js/data.js"></script>
 <script src="/assets/js/3d.js"></script>
+<script src="/assets/js/search.js"></script>
 </html>
