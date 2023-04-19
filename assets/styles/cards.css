@@ -4,7 +4,7 @@ main div{
     grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
     align-items: center;
     justify-content: space-between;
-    margin: 0 5px 0 5px;
+    margin: 0 5px;
     gap: 5px;
 }
 .targeta{

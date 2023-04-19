@@ -174,7 +174,15 @@ nav .nav__cuerpo .nav__toggle {
   display: none;
 }
 
-@media (max-width: 800px) {
+nav .nav__cuerpo .nav__toggle-close {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 990px) {
+  nav .nav__cuerpo .search_btnSearch {
+    left: 0;
+  }
   nav .nav__cuerpo .nav__cuerpo-navegacion {
     position: absolute;
     opacity: 0;
@@ -183,6 +191,51 @@ nav .nav__cuerpo .nav__toggle {
   }
   nav .nav__cuerpo .nav__toggle {
     position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+    -webkit-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+  }
+  nav .nav__cuerpo .nav__toggle-close {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+    -webkit-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+  }
+  nav .nav__cuerpo .hide {
+    display: none;
+  }
+  nav .open .nav__cuerpo-navegacion {
+    left: 0;
+    top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #C06C84;
+    width: 100%;
+    height: calc(100vh -80px);
+    padding: 30px 15px;
+  }
+  nav .open .nav__toggle {
+    visibility: hidden;
+    display: none;
+  }
+  nav .open .nav__toggle-close {
+    visibility: visible;
     display: block;
     cursor: pointer;
   }

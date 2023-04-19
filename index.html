@@ -16,7 +16,7 @@
     <nav>
         <a href="#" class="nav__logo"><img src="/assets/img/pngegg(1).png" alt="" class="nav__logo-img"></a>
         <div class="nav__cuerpo">
-            <ul class="nav__cuerpo-navegacion"> 
+            <ul class="nav__cuerpo-navegacion" id="navegacion"> 
                 <li><a href="#fresh" class="nav-link">Fresh</a></li>
                 <li><a href="#training" class="nav-link">Training</a></li>
                 <li><a href="#rookie" class="nav-link">Rookie</a></li>
@@ -30,8 +30,9 @@
                     <box-icon name='search-alt-2' id="btnSearch" class="search_btnSearch"></box-icon>
                     <box-icon name='x' id="btnClose" class="search_btnClose"></box-icon>
                 </span>
-            </div>
-            <box-icon name='menu' class="nav__toggle"></box-icon>
+            </div>            
+            <box-icon name='menu' class="nav__toggle" id="menuToggle"></box-icon>
+            <box-icon name='x' class="nav__toggle-close" id="menuToggle-close"></box-icon>
             <div class="nav__cuerpo-searchBar">
                 <input type="text" placeholder="Busca el nombre de tu digimon" id="searchBar">
             </div>
@@ -61,5 +62,6 @@
  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <script src="/assets/js/data.js"></script>
 <script src="/assets/js/3d.js"></script>
+<script src="/assets/js/nav.js"></script>
 <script src="/assets/js/search.js"></script>
 </html>
