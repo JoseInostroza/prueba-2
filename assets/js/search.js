@@ -20,3 +20,6 @@ closeBtn.addEventListener('click', ()=>{
     toggle.classList.remove('hide')
     close.classList.remove('hide')
 })
+
+const prueba = document.getElementById('Agumon')
+console.log(prueba);

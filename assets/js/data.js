@@ -12,7 +12,13 @@ function getDigimons(done){
 
 }
 
-getDigimons(data=>{
+
+
+
+
+
+
+/*getDigimons(data=>{
     data.forEach(digimon => {
         const section = document.createRange().createContextualFragment(
             `<div class="targeta" id="${digimon.name}">
@@ -50,4 +56,4 @@ getDigimons(data=>{
                 break;
         }
     });
-})
+})*/
