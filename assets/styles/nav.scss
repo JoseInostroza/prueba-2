@@ -9,9 +9,35 @@ body{
     background: #dee1e2;
     overflow-x: hidden;
     min-height: 100vh;
-    margin: 150px auto;
+    margin: 80px auto;
 }
 
+#freshRef{
+    padding-top: 100px;
+}
+#trainingRef{
+    padding-top: 60px;
+}
+
+#rookieRef{
+    padding-top: 60px;
+}
+
+#championRef{
+    padding-top: 60px;
+}
+
+#ultimateRef{
+    padding-top: 60px;
+}
+
+#megaRef{
+    padding-top: 60px;
+}
+
+#armorRef{
+    padding-top: 60px;
+}
 nav{
     position: fixed;
     top: 0;
@@ -157,9 +183,7 @@ nav{
                 transform: translateX(30px);
                 transition: 1s all ease-in-out;
             }
-            .hide{
-                display: none;
-            }
+            
         }
         .open{
                 .nav__cuerpo-navegacion{
@@ -188,3 +212,6 @@ nav{
     }
 }
 
+.hide{
+    display: none;
+    }

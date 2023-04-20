@@ -8,8 +8,6 @@ function getDigimons(done){
             done(data)
         }
     )
-
-
 }
 
 
@@ -18,10 +16,10 @@ function getDigimons(done){
 
 
 
-/*getDigimons(data=>{
+getDigimons(data=>{
     data.forEach(digimon => {
         const section = document.createRange().createContextualFragment(
-            `<div class="targeta" id="${digimon.name}">
+            `<div class="targeta" id="${digimon.name.toUpperCase()}">
                 <div class="targeta__img" >
                     <img src="${digimon.img}" alt="digimon">
                 </div>
@@ -56,4 +54,4 @@ function getDigimons(done){
                 break;
         }
     });
-})*/
+})
